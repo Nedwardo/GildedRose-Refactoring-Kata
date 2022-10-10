@@ -1,4 +1,6 @@
-package com.gildedrose;
+package com.gildedrose.itemUpdate.qualityUpdate;
+
+import com.gildedrose.itemUpdate.QualityUpdate;
 
 public class SulfurasQualityUpdate implements QualityUpdate {
     @Override

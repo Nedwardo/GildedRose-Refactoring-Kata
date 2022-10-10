@@ -1,4 +1,6 @@
-package com.gildedrose;
+package com.gildedrose.itemUpdate.qualityUpdate;
+
+import com.gildedrose.itemUpdate.QualityUpdate;
 
 import static java.lang.Math.max;
 import static java.lang.Math.min;

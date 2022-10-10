@@ -1,5 +1,7 @@
 package com.gildedrose;
 
+import com.gildedrose.itemUpdate.ItemUpdate;
+
 public class GildedRoseItemFactory {
     ItemUpdate[] itemUpdates;
     public GildedRoseItemFactory(ItemUpdate[] itemUpdates){

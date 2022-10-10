@@ -1,7 +1,6 @@
-package com.gildedrose;
+package com.gildedrose.itemUpdate.qualityUpdate;
 
-import static java.lang.Math.max;
-import static java.lang.Math.min;
+import com.gildedrose.itemUpdate.QualityUpdate;
 
 public class ConjuredQualityUpdate implements QualityUpdate {
     @Override

@@ -1,5 +1,9 @@
 package com.gildedrose;
 
+import com.gildedrose.itemUpdate.ItemUpdate;
+import com.gildedrose.itemUpdate.QualityUpdate;
+import com.gildedrose.itemUpdate.SellByUpdates;
+
 public class GildedRoseItem {
     private final Item item;
     private final ItemUpdate itemUpdate;

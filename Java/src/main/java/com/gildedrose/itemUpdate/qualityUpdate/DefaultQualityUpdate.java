@@ -1,6 +1,7 @@
-package com.gildedrose;
-import static java.lang.Math.max;
-import static java.lang.Math.min;
+package com.gildedrose.itemUpdate.qualityUpdate;
+
+import com.gildedrose.itemUpdate.QualityUpdate;
+
 public class DefaultQualityUpdate implements QualityUpdate {
     @Override
     public int updateQuality(int sellIn, int quality) {

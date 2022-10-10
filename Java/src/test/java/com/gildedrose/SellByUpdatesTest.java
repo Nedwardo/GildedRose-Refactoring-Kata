@@ -1,5 +1,6 @@
 package com.gildedrose;
 
+import com.gildedrose.itemUpdate.SellByUpdates;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
