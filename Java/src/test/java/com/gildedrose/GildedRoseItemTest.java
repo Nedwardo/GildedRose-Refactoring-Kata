@@ -20,7 +20,6 @@ class QualityUpdateStub implements QualityUpdate {
     @Override
     public Boolean nameMatchesThisType(String itemName){ return false;}
 }
-// TODO ask if should stub item class
 class GildedRoseItemTest {
 
     @Test

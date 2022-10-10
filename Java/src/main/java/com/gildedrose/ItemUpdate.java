@@ -1,9 +1,6 @@
 package com.gildedrose;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
-public class ItemUpdate { //TODO little return on investment at this point, also named instance vs named object
-    //TODO basically a wrapper for a singleton class?
+public class ItemUpdate {
     private final SellByUpdate sellByUpdate;
     private final QualityUpdate qualityUpdate;
     private final Boolean bounded;
