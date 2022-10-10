@@ -1,18 +1,18 @@
 package com.gildedrose;
 
 public class GildedRoseItemFactory {
-    QualityChange[] qualityChanges;
-    public GildedRoseItemFactory(QualityChange[] qualityChanges){
-        this.qualityChanges = qualityChanges;
+    ItemUpdate[] itemUpdates;
+    public GildedRoseItemFactory(ItemUpdate[] itemUpdates){
+        this.itemUpdates = itemUpdates;
     }
     public GildedRoseItem CreateInstance(Item item){
         return new GildedRoseItem(item, assignQualityChange(item));
     }
-    private QualityChange assignQualityChange(Item item) {
-        for (QualityChange qualityChange : qualityChanges){
-            if (qualityChange.nameMatchesThisType(item.name))
-                return qualityChange;
+    private ItemUpdate assignQualityChange(Item item) {
+        for (ItemUpdate itemUpdate : itemUpdates){
+            if (itemUpdate.nameMatchesThisType(item.name))
+                return itemUpdate;
         }
-        return new DefaultQualityChange();
+        return ItemUpdate.defaultItemUpdate();
     }
 }

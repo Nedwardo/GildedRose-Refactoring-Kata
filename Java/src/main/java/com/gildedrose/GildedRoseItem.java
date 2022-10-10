@@ -2,17 +2,20 @@ package com.gildedrose;
 
 public class GildedRoseItem {
     private final Item item;
-    private final QualityChange qualityChange;
-    public GildedRoseItem(Item item, QualityChange qualityChange) {
+    private final ItemUpdate itemUpdate;
+    public GildedRoseItem(Item item, QualityUpdate qualityUpdate) {
         this.item = item;
-        this.qualityChange = qualityChange;
+        this.itemUpdate = new ItemUpdate(new SellByUpdates(), qualityUpdate);
+    }
+    public GildedRoseItem(Item item, ItemUpdate itemUpdate) {
+        this.item = item;
+        this.itemUpdate = itemUpdate;
     }
     public void updateQuality(){
-        item.quality = qualityChange.updateQuality(item.sellIn, item.quality);
-        item.sellIn = qualityChange.updateSellIn(item.sellIn);
+        itemUpdate.updateItem(item);
     }
     @Override
     public String toString() {
-        return item.name + ", " + item.sellIn + ", " + item.quality;
+        return item.toString();
     }
 }

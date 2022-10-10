@@ -4,23 +4,20 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TestQualityChange1 implements QualityChange{
+class TestQualityUpdate1 implements QualityUpdate {
     public int updateQuality (int sellIn, int quality){return 1;}
-    public int updateSellIn(int sellIn){return 0;}
     public Boolean nameMatchesThisType(String itemName){
         return itemName.contains("A");
     }
 }
-class TestQualityChange2 implements QualityChange{
+class TestQualityUpdate2 implements QualityUpdate {
     public int updateQuality (int sellIn, int quality){return 2;}
-    public int updateSellIn(int sellIn){return 0;}
     public Boolean nameMatchesThisType(String itemName){
         return itemName.contains("B");
     }
 }
-class TestQualityChange3 implements QualityChange{
+class TestQualityUpdate3 implements QualityUpdate {
     public int updateQuality (int sellIn, int quality){return 3;}
-    public int updateSellIn(int sellIn){return 0;}
     public Boolean nameMatchesThisType(String itemName){
         return itemName.contains("C");
     }
@@ -29,10 +26,12 @@ class GildedRoseItemFactoryTest {
 
     @Test
     void createInstance() {
-        QualityChange[] qualityChanges = new QualityChange[]{
-            new TestQualityChange1(), new TestQualityChange2(), new TestQualityChange3()
+        ItemUpdate[] itemUpdates = new ItemUpdate[]{
+            new ItemUpdate(new SellByUpdates(), new TestQualityUpdate1()),
+            new ItemUpdate(new SellByUpdates(), new TestQualityUpdate2()),
+            new ItemUpdate(new SellByUpdates(), new TestQualityUpdate3())
         };
-        GildedRoseItemFactory gildedRoseItemFactory = new GildedRoseItemFactory(qualityChanges);
+        GildedRoseItemFactory gildedRoseItemFactory = new GildedRoseItemFactory(itemUpdates);
         GildedRoseItem testItem1 = gildedRoseItemFactory.CreateInstance(new Item("A", 0, 0));
         testItem1.updateQuality();
         assertTrue(testItem1.toString().contains("1"));
