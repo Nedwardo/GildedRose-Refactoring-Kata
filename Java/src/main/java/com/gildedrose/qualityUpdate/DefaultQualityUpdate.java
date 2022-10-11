@@ -1,4 +1,4 @@
-package com.gildedrose.itemUpdate.qualityUpdate;
+package com.gildedrose.qualityUpdate;
 
 import com.gildedrose.itemUpdate.QualityUpdate;
 

@@ -1,5 +1,6 @@
 package com.gildedrose;
 
+import com.gildedrose.itemUpdate.GildedRoseItem;
 import com.gildedrose.itemUpdate.QualityUpdate;
 import org.junit.jupiter.api.Test;
 

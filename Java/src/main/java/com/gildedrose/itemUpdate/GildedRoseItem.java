@@ -1,8 +1,6 @@
-package com.gildedrose;
+package com.gildedrose.itemUpdate;
 
-import com.gildedrose.itemUpdate.ItemUpdate;
-import com.gildedrose.itemUpdate.QualityUpdate;
-import com.gildedrose.itemUpdate.SellByUpdates;
+import com.gildedrose.Item;
 
 public class GildedRoseItem {
     private final Item item;

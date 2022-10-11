@@ -1,7 +1,6 @@
-package com.gildedrose;
+package com.gildedrose.itemUpdate;
 
-import com.gildedrose.itemUpdate.ItemUpdate;
-
+import com.gildedrose.Item;
 public class GildedRoseItemFactory {
     ItemUpdate[] itemUpdates;
     public GildedRoseItemFactory(ItemUpdate[] itemUpdates){
@@ -15,6 +14,6 @@ public class GildedRoseItemFactory {
             if (itemUpdate.nameMatchesThisType(item.name))
                 return itemUpdate;
         }
-        return ItemUpdate.defaultItemUpdate();
+        return new ItemUpdate();
     }
 }

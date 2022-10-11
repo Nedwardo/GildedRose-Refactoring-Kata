@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-import com.gildedrose.itemUpdate.qualityUpdate.BackstagePassQualityUpdate;
+import com.gildedrose.qualityUpdate.BackstagePassQualityUpdate;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

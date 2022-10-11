@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-import com.gildedrose.itemUpdate.qualityUpdate.BrieQualityUpdate;
+import com.gildedrose.qualityUpdate.BrieQualityUpdate;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

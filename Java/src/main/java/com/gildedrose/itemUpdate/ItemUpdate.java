@@ -1,12 +1,17 @@
 package com.gildedrose.itemUpdate;
 
 import com.gildedrose.Item;
-import com.gildedrose.itemUpdate.qualityUpdate.DefaultQualityUpdate;
+import com.gildedrose.qualityUpdate.DefaultQualityUpdate;
 
 public class ItemUpdate {
     private final SellByUpdate sellByUpdate;
     private final QualityUpdate qualityUpdate;
     private final Boolean bounded;
+    public ItemUpdate(){
+        this.sellByUpdate = new SellByUpdates();
+        this.qualityUpdate = new DefaultQualityUpdate();
+        this.bounded = false;
+    }
     public ItemUpdate(SellByUpdate sellByUpdate, QualityUpdate qualityUpdate){
         this.sellByUpdate = sellByUpdate;
         this.qualityUpdate = qualityUpdate;
@@ -25,8 +30,5 @@ public class ItemUpdate {
     }
     public Boolean nameMatchesThisType(String itemName){
         return qualityUpdate.nameMatchesThisType(itemName);
-    }
-    public static ItemUpdate defaultItemUpdate(){
-        return new ItemUpdate(new SellByUpdates(), new DefaultQualityUpdate());
     }
 }

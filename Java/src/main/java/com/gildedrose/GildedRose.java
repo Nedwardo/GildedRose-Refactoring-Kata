@@ -1,10 +1,10 @@
 package com.gildedrose;
 
 import com.gildedrose.itemUpdate.*;
-import com.gildedrose.itemUpdate.qualityUpdate.BackstagePassQualityUpdate;
-import com.gildedrose.itemUpdate.qualityUpdate.BrieQualityUpdate;
-import com.gildedrose.itemUpdate.qualityUpdate.DefaultQualityUpdate;
-import com.gildedrose.itemUpdate.qualityUpdate.SulfurasQualityUpdate;
+import com.gildedrose.qualityUpdate.BackstagePassQualityUpdate;
+import com.gildedrose.qualityUpdate.BrieQualityUpdate;
+import com.gildedrose.qualityUpdate.DefaultQualityUpdate;
+import com.gildedrose.qualityUpdate.SulfurasQualityUpdate;
 
 class GildedRose {
     public GildedRoseItem[] items;
